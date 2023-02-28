@@ -50,3 +50,6 @@ jobs:
              aws-region: us-east-1
       - name: Listar buckets
         run: aws s3api list-buckets 
+
+      - name: Subir archivos
+        run:  aws s3 cp minimo.py s3://bucket-tallerbigdata021
